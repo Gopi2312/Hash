@@ -21,7 +21,7 @@ public class Hashmap
         	Object x = obj.getValue();
         	if(x.equals(19))
         	{
-        		logger.log(Level.INFO,()-> "Key for Value 19 :"+obj.getKey());
+        		logger.log(Level.INFO,()-> "Key for Value 19 is :"+obj.getKey());
         	}
         	
         }
