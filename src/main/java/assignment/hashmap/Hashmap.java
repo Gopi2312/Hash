@@ -13,11 +13,11 @@ public class Hashmap
         map.put("saran", 19);
         map.put("hari", 19);
         logger.log(Level.INFO,()->"Map"+map);
-        Set set = map.entrySet();
-        Iterator ite = set.iterator();
+        Set<Entry<String, Integer>> set = map.entrySet();
+        Iterator<Entry<String, Integer>> ite = set.iterator();
         while(ite.hasNext())
         {
-        	Map.Entry obj = (Map.Entry)ite.next();
+        	Entry<String, Integer> obj = ite.next();
         	Object x = obj.getValue();
         	if(x.equals(19))
         	{
