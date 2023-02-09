@@ -13,12 +13,12 @@ public class Treeset {
 		set.add("paramakudi");
 		set.add("ramnad");
 		set.add("theni");
-		logger.info(String.valueOf(set));
+		logger.log(Level.INFO,()-> "Set :"+set);
 		int n = set.size();
-		logger.info("Size of a set"+String.valueOf(n));
-		logger.info("Is theni in the Treeset: "+String.valueOf(set.contains("theni")));
+		logger.log(Level.INFO,()-> "Size of a Set :"+n);
+		logger.log(Level.INFO,()-> "Is theni in the Treeset: "+set.contains("chennai"));
 		set.remove("theni");
-		logger.info(String.valueOf(set));
+		logger.log(Level.INFO,()-> "Set :"+set);
 		
 	}
 
