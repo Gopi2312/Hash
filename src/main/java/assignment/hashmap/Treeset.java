@@ -5,20 +5,20 @@ import java.util.logging.Logger;
 
 public class Treeset {
 
-	public static void main(String[] args) {
+	void treeset(){
 		Logger logger = Logger.getLogger("hi");
 		Set<String> set = new TreeSet<>();
 		set.add("chennai");
 		set.add("madurai");
-		set.add("paramakudi");
-		set.add("ramnad");
 		set.add("theni");
-		logger.log(Level.INFO,()-> "Set :"+set);
+		set.add("ramnad");
+		set.add("paramakudi");
+		logger.info(String.valueOf(set));
 		int n = set.size();
-		logger.log(Level.INFO,()-> "Size of a Set :"+n);
-		logger.log(Level.INFO,()-> "Is theni in the Treeset: "+set.contains("chennai"));
+		logger.info("Size of a set"+String.valueOf(n));
+		logger.info("Is theni in the Treeset: "+String.valueOf(set.contains("theni")));
 		set.remove("theni");
-		logger.log(Level.INFO,()-> "Set :"+set);
+		logger.info(String.valueOf(set));
 		
 	}
 

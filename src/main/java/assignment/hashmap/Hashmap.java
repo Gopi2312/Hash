@@ -1,9 +1,10 @@
 package assignment.hashmap;
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.logging.*;
 public class Hashmap 
 {
-    public static void main( String[] args )
+    void hashmap()
     {
     	Logger logger = Logger.getLogger("com.api.jar");
         Map <String,Integer> map = new HashMap<>();
@@ -21,7 +22,7 @@ public class Hashmap
         	Object x = obj.getValue();
         	if(x.equals(19))
         	{
-        		logger.log(Level.INFO,()-> "Key for Value 19 is :"+obj.getKey());
+        		logger.log(Level.INFO,()-> "Key for Value 19 :"+obj.getKey());
         	}
         	
         }

@@ -3,7 +3,7 @@ package assignment.hashmap;
 import java.util.*;
 import java.util.logging.Logger;
 public class Hashset {
-	public static void main(String[] args) {
+	void hashset() {
 		Logger logger = Logger.getLogger("hi");
 		Set<String> set = new HashSet<>();
 		set.add("chennai");
@@ -12,16 +12,16 @@ public class Hashset {
 		set.add("ramnad");
 		set.add("theni");
 		set.remove("ramnad");
-		logger.log(Level.INFO,()-> "Set :"+set);
+		logger.info(String.valueOf(set));
 		int len = set.size();
-		logger.log(Level.INFO,()-> "Size of a Set"+len);
+		logger.info(String.valueOf(len));
 		Set<String> lset = new LinkedHashSet<>();
 		lset.add("chennai");
 		lset.add("madurai");
 		lset.add("paramakudi");
-		lset.add("kamuthi");
+		lset.add("ramnad");
 		lset.add("theni");
-		lset.remove("kamuthi");
-		logger.log(Level.INFO,()-> "LinkedSet :"+lset);
+		lset.remove("ramnad");
+		logger.info(String.valueOf(lset));
 	}
 }
