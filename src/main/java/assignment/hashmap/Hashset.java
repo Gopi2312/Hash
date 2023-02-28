@@ -22,7 +22,7 @@ public class Hashset {
 		lset.add("paramakudi");
 		lset.add("kamuthi");
 		lset.add("theni");
-		lset.remove("chennai");
+		lset.remove("kamuthi");
 		logger.log(Level.INFO,()->""+lset);
 	}
 }
