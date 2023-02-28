@@ -1,6 +1,7 @@
 package assignment.hashmap;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Treeset {
@@ -13,13 +14,12 @@ public class Treeset {
 		set.add("theni");
 		set.add("ramnad");
 		set.add("paramakudi");
-		logger.info(String.valueOf(set));
+		logger.log(Level.INFO,()->""+set);
 		int n = set.size();
-		logger.info("Size of a set"+String.valueOf(n));
-		logger.info("Is theni in the Treeset: "+String.valueOf(set.contains("theni")));
+		logger.log(Level.INFO,()->"Size of a set"+n);
+		logger.log(Level.INFO,()->"Is theni in the Treeset: "+set.contains("theni"));
 		set.remove("theni");
-		logger.info(String.valueOf(set));
-		
+		logger.log(Level.INFO,()->""+set);	
 	}
 
 }
